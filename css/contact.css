@@ -1,0 +1,19 @@
+.site-footer {
+    margin-top: 100px; 
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.elfsight-container,
+.maps {
+    flex: 1;
+    margin-right: 250px; /* Ajustez la marge selon vos préférences */
+}
+  
+.maps {
+    margin-top: 150px; /* Ajustez la marge depuis le haut selon vos préférences */
+}
+  

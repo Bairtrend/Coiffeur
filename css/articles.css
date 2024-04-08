@@ -1,0 +1,70 @@
+.info-message {
+  background-color: #f4f5f6; /* Couleur de fond */
+  color: #060606; /* Couleur du texte */
+  padding: 15px; /* Espace intérieur */
+  border-radius: 8px; /* Coins arrondis */
+  margin-bottom: 20px; /* Marge en bas */
+  font-size: 18px; /* Taille de police */
+  font-weight: bold; /* Gras */
+  text-align: center; /* Alignement du texte au centre */
+}
+
+
+/* Ajoutez ces styles à votre fichier de style CSS (par exemple, articles.css) */
+
+/* Styles pour les cartes d'articles */
+.card {
+  border: 1px solid #ddd; /* Bordure des cartes */
+  border-radius: 10px; /* Coins arrondis */
+  overflow: hidden; /* Masquer le dépassement du contenu */
+  transition: transform 0.3s ease-in-out; /* Animation de transition au survol */
+  margin-right: 20px; /* Espacement entre les cartes */
+  margin-bottom: 20px; /* Espacement sous chaque carte */
+  flex: 1 1 300px; /* Distribution équitable de l'espace, avec une largeur initiale de 300px */
+  max-width: 300px; /* Largeur maximale */
+  height: 100%; /* Définition de la hauteur */
+ 
+}
+
+.card-container {
+  display: flex; /* Utilisation de flexbox */
+  flex-wrap: wrap; /* Permettre le passage à la ligne */
+}
+.card:last-child {
+  margin-right: 0; /* Aucune marge à droite pour la dernière carte de chaque ligne */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+.card-img-top {
+  border-bottom: 1px solid #ddd; /* Bordure inférieure de l'image */
+  border-radius: 10px 10px 0 0; /* Coins arrondis seulement en haut */
+  object-fit: contain; /* Pour adapter l'image à l'intérieur de la carte tout en conservant les proportions */
+  width: 100%; /* Définir une largeur de 100% */
+  height: 100%; /* Définir une hauteur de 100% */
+}
+
+
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Ajustements pour la mise en page */
+.container {
+  max-width: 1200px; /* Largeur maximale de la mise en page */
+}
+
+/* Espacement entre les colonnes */
+.row [class*="col-"] {
+  margin-bottom: 20px;
+}
